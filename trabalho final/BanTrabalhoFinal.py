@@ -8,7 +8,6 @@ user = "postgres"
 password = "postgres"
 
 try:
-    # Obter entrada do usuário para escolher a operação desejada
     escolha_usuario = int(input("""Digite: \n1 para inserir uma nova tupla\n2 para mostrar todas as tuplas de todas as tabelas
 3 para mostrar Nome e CPF dos clientes que já compraram presencialmente e o título do livro
 4 para mostrar o cliente que mais comprou livros online e a quantidade comprada\n"""))
@@ -20,7 +19,6 @@ try:
     cursor = connection.cursor()
 
     if escolha_usuario == 1:
-        # Obter escolha do usuário para o tipo de inserção
         tipo_insercao = int(input("""Digite: \n1 para inserir novo autor \n2 para inserir novo cliente \n3 para para inserir nova compra 
 4 para inserir nova distribuidora \n5 para inserir novo fornecedor \n6 para inserir novo funcionario
 7 para inserir novo livro \n8 para inserir nova preparação \n9 para inserir nova transportadora 
